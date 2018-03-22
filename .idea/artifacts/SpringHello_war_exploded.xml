@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SpringHello:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringHello_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SpringHello" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.14.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.14.RELEASE" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/standard.jar" />
+          <element id="file-copy" path="$USER_HOME$/.m2/repository/org/projectlombok/lombok/1.16.18/lombok-1.16.18-sources.jar" />
+          <element id="file-copy" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.3/jackson-core-2.9.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.3/jackson-databind-2.9.3.jar" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.3" />
+          <element id="library" level="project" name="org.projectlombok:lombok:1.16.4" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+        </element>
+      </element>
+      <element id="module-output" name="SpringHello" />
+      <element id="javaee-facet-resources" facet="SpringHello/web/Web" />
+    </root>
+  </artifact>
+</component>

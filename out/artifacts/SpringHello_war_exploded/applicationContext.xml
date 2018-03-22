@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+      <context:component-scan base-package="com.hello.services.impl" />
+      <context:component-scan base-package="com.hello.config" />
+      <context:component-scan base-package="com.hello.controller" />
+      <!--<context:annotation-config>com.hello.config.AppConfig-->
+    <!--</context:annotation-config>-->
+    <!--<context:component-scan base-package="com.hello.controller"/>-->
+    <beans>
+        <bean id="httpService" class="com.hello.services.impl.HttpServiceImpl"></bean>
+        <bean id="clientHttpRequestFactory" class="org.springframework.http.client.SimpleClientHttpRequestFactory">
+                <!--连接超时时间，毫秒-->
+                <property name="connectTimeout" value="5000"/>
+                <!--读写超时时间，毫秒-->
+                <property name="readTimeout" value="10000"/>
+            </bean>
+            <!--<bean id="restTemplate"  class="org.springframework.web.client.RestTemplate">-->
+            <!--</bean>-->
+        </beans>
+</beans>
